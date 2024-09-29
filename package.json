@@ -1,0 +1,24 @@
+{
+  "name": "playwright-automation",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "tests": "npx playwright test",
+    "specificTest": "npx playwright test --grep sepLogin.spec.js",
+    "tagTest": "npx playwright test --grep @tagName",
+    "testH": "npx playwright test --headed",
+    "report": "npx playwright show-report",
+    "test&report": "npx playwright test --headed && npx playwright show-report"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "@playwright/test": "^1.47.1",
+    "@types/node": "^22.5.5"
+  },
+  "dependencies": {
+    "folio": "^0.3.18"
+  }
+}
